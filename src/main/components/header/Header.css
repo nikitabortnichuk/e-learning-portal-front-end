@@ -1,0 +1,99 @@
+.App-header {
+    background-color: #280D31;
+    display: flex;
+    position: sticky;
+}
+
+.navbar {
+    justify-self: center;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    margin: auto 0;
+    padding: 4px 0;
+}
+
+/* logo */
+
+.logo-title {
+    display: flex;
+    height: 40px;
+}
+
+.title {
+    font-size: 28px;
+    color: white;
+    margin: -4px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    margin-top: -4px;
+}
+
+.title-part {
+    color: #f14e4c;
+    background: none;
+    padding: 0;
+}
+
+/* navigation */
+
+.navbar-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    display: flex;
+}
+
+.link.navbar-link {
+    font-size: 18px;
+    padding: 5px 12px;
+    align-items: center;
+}
+
+.link.navbar-link.active {
+    color: #CCC;
+}
+
+.link.navbar-link.active:focus {
+    color: white;
+}
+
+.link.navbar-link:hover {
+    color: #f14e4c;
+}
+
+.link {
+    transition-property: color, border-color;
+    transition-duration: .3s;
+}
+
+.navbar-divider {
+    margin: -4px 8px;
+    width: 1px;
+    height: inherit;
+    background-color: rgba(241, 78, 76, 0.6);
+}
+
+.navbar-auth {
+    align-self: center;
+    margin-right: 5px;
+    line-height: 1.6;
+    border-radius: 5px;
+    border: 1px solid rgba(241, 78, 76, 0.5);
+    padding: 4px 15px;
+}
+
+.navbar-auth:hover {
+    border-color: rgba(241, 78, 76);
+}
+
+.auth-links {
+    display: flex;
+}

@@ -1,0 +1,10 @@
+/* Courses */
+
+.teach {
+    height: 500px;
+    display: flex;
+}
+  
+.teach-title {
+    margin: auto;
+}
