@@ -1,0 +1,120 @@
+/* Profile */
+
+.profile-header-wrapper {
+    margin-top: 50px;
+}
+
+.profile-header {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.profile-header-logo {
+    background-color: teal;
+    border-radius: 8px;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 64px;
+    display: flex;
+    cursor: default;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
+    font-size: 36px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.profile-header-info {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.profile-body {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.profile-nav {
+    min-width: 100px;
+    margin-right: 60px;
+}
+
+.profile-nav-links {
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.profile-nav-links .top{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1.25em;
+}
+
+
+.profile-nav-link {
+    color: #63c8ff;
+}
+
+.profile-nav-link:hover {
+    color: #63c8ff;
+    text-decoration: underline;
+}
+
+.profile-nav-link:focus {
+    color: black;
+}
+
+.profile-nav-links .active {
+    color: #000;
+}
+
+.profile-content {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.profile-content-item div {
+    margin-bottom: 0.5rem;
+}
+
+.profile-content-item label {
+    font-size: 16px;
+}
+
+.profile-content-item {
+    text-align: left;
+}
+
+.profile-description-title {
+    font-weight: 500;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.item-title {
+    margin-top: -3rem;
+    margin-bottom: 1.2rem;
+}
+
+.certificates-content{
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.certificates {
+    width: 100%;
+}
+
+.logout {
+    margin-top: 1rem;
+}

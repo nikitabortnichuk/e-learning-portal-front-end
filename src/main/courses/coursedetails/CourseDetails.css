@@ -1,0 +1,29 @@
+.course-details-header {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    background-color: #351141;
+    color: white;
+    text-align: left;
+    padding: 60px 0;
+}
+
+.course-details-body {
+    margin-top: 3rem;
+}
+
+.course-lessons {
+    text-align: left;
+}
+
+.lessons-list-item {
+    display: list-item;
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lessons-list-title {
+    font-size: 48px;
+}

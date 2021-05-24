@@ -10,12 +10,13 @@
 }
 
 .center-form {
-    margin: auto;
+    margin: 15px auto;
 }
 
 .login-form {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     margin: 0;
+    font-size: 0;
 }
 
 .login-label-hidden {

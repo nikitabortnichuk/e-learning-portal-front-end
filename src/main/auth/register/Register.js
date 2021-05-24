@@ -1,4 +1,4 @@
-import '../login/Login.css'
+import '../login/Login.css';
 import RegisterForm from './RegisterForm';
 
 function Register() {

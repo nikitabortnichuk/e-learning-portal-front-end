@@ -36,7 +36,7 @@
 .title-part {
     color: #f14e4c;
     background: none;
-    padding: 0;
+    padding-right: 0;
 }
 
 /* navigation */
@@ -96,4 +96,22 @@
 
 .auth-links {
     display: flex;
+}
+
+.user-profile {
+    display: flex;
+}
+
+.profile-logo {
+    background-color: teal;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
 }
