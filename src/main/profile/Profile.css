@@ -23,7 +23,7 @@
     user-select: none;
     font-size: 36px;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
 .profile-header-info {
@@ -115,6 +115,6 @@
     width: 100%;
 }
 
-.logout {
+.bottom {
     margin-top: 1rem;
 }

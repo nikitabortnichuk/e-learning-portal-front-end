@@ -11,7 +11,7 @@ class CourseDetailsPage extends Component {
         super(props)
 
         this.state = {
-            courseId : props.match.params
+            courseId: props.match.params
         }
     }
 
@@ -32,7 +32,7 @@ class CourseDetailsPage extends Component {
                                 </h1>
                                 <div className="course-description">
                                     <p>
-                                        Kotlin is the modern statically typed programming language for the JVM, Android and the browser. It's concise, safe and versatile. Kotlin code can be compiled into JVM bytecode, JavaScript or directly to the native machine code.
+                                        Kotlin - це сучасна статично визначена мова програмування для JVM, Android та браузера. Це стисло, безпечно та універсально. Код Kotlin можна скомпілювати в байт-код JVM, JavaScript або безпосередньо в власний машинний код.
                                     </p>
                                 </div>
                             </div>
@@ -46,15 +46,15 @@ class CourseDetailsPage extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="course-lessons col-10">
-                                <p className="lessons-list-title">Lessons</p>
+                                <p className="lessons-list-title">Уроки: </p>
                                 <div className="lessons-list">
-                                    <label className="lessons-list-item">- 1.1 Hello, world!</label>
-                                    <label className="lessons-list-item">- 1.2 Java to Kotlin conversion</label>
-                                    <label className="lessons-list-item">- 1.3 Named arguments</label>
+                                    <label className="lessons-list-item"><a className="lesson-link" href={`/lesson/32`}>- 1.1 Hello, world!</a></label>
+                                    <label className="lessons-list-item"><a className="lesson-link" href={`/lesson/32`}>- 1.2 Конвертація Java в котлін</a></label>
+                                    <label className="lessons-list-item"><a className="lesson-link" href={`/lesson/32`}>- 1.3 Іменовані параметри</a></label>
                                 </div>
                             </div>
                             <div className="col-2">
-                                <Button variant="success" size="lg" className="course-learn-button" href="#">Join this course</Button>
+                                <Button variant="success" size="lg" className="course-learn-button" href="#">Приєднатись до курсу</Button>
                             </div>
                         </div>
                     </div>

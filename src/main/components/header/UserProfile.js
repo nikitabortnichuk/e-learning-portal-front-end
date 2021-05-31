@@ -21,12 +21,15 @@ const UserProfile = ({ user }) => {
     return (
         <div className="user-profile">
             <Dropdown>
-                <Dropdown.Toggle as={UserLogo}>{firstLetter}</Dropdown.Toggle>
+                <Dropdown.Toggle as={UserLogo}>N</Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="/profile">Profile</Dropdown.Item>
+                    <Dropdown.Item href="/profile">Профіль</Dropdown.Item>
+                    <Dropdown.Item href="/profile/mycourses">Мої курси</Dropdown.Item>
+                    <Dropdown.Item href="/profile/wishlist">Список бажань</Dropdown.Item>
+                    <Dropdown.Item href="/profile/certificates">Сертифікати</Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item href="" onClick={userActions.logout}>Logout</Dropdown.Item>
+                    <Dropdown.Item href="" onClick={userActions.logout}>Вийти</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </div>

@@ -36,7 +36,7 @@ class LoginForm extends Component {
             <div className="form-wrap">
                 <div className="center-form">
                     <form className="login-form" autoComplete="on" onSubmit={this.handleSubmit}>
-                        <label className="login-label-hidden" for="id-login-username">Username</label>
+                        <label className="login-label-hidden" for="id-login-username">Ім'я користувача</label>
                         <input className="login-form-input"
                             name="username"
                             autoComplete="name"
@@ -47,7 +47,7 @@ class LoginForm extends Component {
                             onChange={this.handleChange}
                             autoFocus
                             required />
-                        <label className="login-label-hidden" for="id-login-password">Password</label>
+                        <label className="login-label-hidden" for="id-login-password">Пароль</label>
                         <input className="login-form-input"
                             name="password"
                             type="password"
@@ -60,7 +60,7 @@ class LoginForm extends Component {
                             autoFocus
                             required />
 
-                        <button className="login-form-button">Log in</button>
+                        <button className="login-form-button">Увійти</button>
                     </form>
                 </div>
             </div>

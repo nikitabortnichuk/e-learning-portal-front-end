@@ -18,7 +18,7 @@ class CoursesPage extends Component {
         return (
             <Row>
                 <div className="courses container">
-                    <h1 className="courses-title">Courses</h1>
+                    <h1 className="courses-title">Курси</h1>
                     <div className="divider"></div>
                     {courses.items &&
                         <ul className="courses-list row">

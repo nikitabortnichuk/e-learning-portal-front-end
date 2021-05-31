@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import { PrivateRoute } from '../components/private/PrivateRoute';
-import { Description, Wishlist, Certificates, ProfileCourses } from './Components';
+import { Description, Courses, Wishlist, Certificates } from './Components';
 import { userActions } from '../model/actions/user/UserActions';
 import './Profile.css'
 
@@ -43,7 +43,7 @@ class ProfilePage extends Component {
                     <div className="profile-content">
                         <Route exact path={this.props.match.path}><Description /></Route>
                         <Route path={`${this.props.match.path}/description`} ><Description /></Route>
-                        <Route path={`${this.props.match.path}/mycourses`} ><ProfileCourses /></Route>
+                        <Route path={`${this.props.match.path}/mycourses`} ><Courses /></Route>
                         <Route path={`${this.props.match.path}/wishlist`} ><Wishlist /></Route>
                         <Route path={`${this.props.match.path}/certificates`} ><Certificates /></Route>
                     </div>

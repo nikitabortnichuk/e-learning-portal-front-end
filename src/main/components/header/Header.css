@@ -49,7 +49,7 @@
 
 .navbar-item {
     display: flex;
-}
+}   
 
 .link.navbar-link {
     font-size: 18px;
@@ -72,6 +72,7 @@
 .link {
     transition-property: color, border-color;
     transition-duration: .3s;
+    color: white;
 }
 
 .navbar-divider {
@@ -100,6 +101,8 @@
 
 .user-profile {
     display: flex;
+    position: relative;
+    z-index: 999;
 }
 
 .profile-logo {
@@ -114,4 +117,11 @@
     justify-content: center;
     color: white;
     user-select: none;
+}
+
+.right {
+    display: flex;
+    position: absolute;
+    right: 0;
+    z-index: 999;
 }

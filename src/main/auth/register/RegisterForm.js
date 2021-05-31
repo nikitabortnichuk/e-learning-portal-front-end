@@ -38,7 +38,7 @@ class RegisterForm extends Component {
 
         this.setState({ submitted: true });
         const { user } = this.state;
-        if (user.name && user.surname && user.username && user.email && user.password) {
+        if (user.name && user.surname && user.phone && user.username && user.email && user.password) {
             this.props.register(user);
         }
     }
@@ -49,25 +49,36 @@ class RegisterForm extends Component {
             <div className="form-wrap">
                 <div className="center-form">
                     <form className="login-form" autoComplete="on" onSubmit={this.handleSubmit}>
-                        <label className="login-label-hidden" for="id-login-name">Name</label>
+                        <label className="login-label-hidden" for="id-login-name">Ім'я</label>
                         <input className="login-form-input"
                             name="name"
                             autoComplete="name"
                             spellCheck="true"
-                            placeholder="Name"
+                            placeholder="Ім'я"
                             id="id-login-name"
                             value={user.name}
                             onChange={this.handleChange}
                             autoFocus
                             required />
-                        <label className="login-label-hidden" for="id-login-surname">Surname</label>
+                        <label className="login-label-hidden" for="id-login-surname">Прізвище</label>
                         <input className="login-form-input"
                             name="surname"
                             autoComplete="name"
                             spellCheck="true"
-                            placeholder="Surname"
+                            placeholder="Прізвище"
                             id="id-login-surname"
                             value={user.surname}
+                            onChange={this.handleChange}
+                            autoFocus
+                            required />
+                        <label className="login-label-hidden" for="id-login-phone">Телефон</label>
+                        <input className="login-form-input"
+                            name="phone"
+                            autoComplete="number"
+                            spellCheck="true"
+                            placeholder="Телефон"
+                            id="id-login-pjone"
+                            value={user.phone}
                             onChange={this.handleChange}
                             autoFocus
                             required />
@@ -82,31 +93,31 @@ class RegisterForm extends Component {
                             onChange={this.handleChange}
                             autoFocus
                             required />
-                        <label className="login-label-hidden" for="id-login-username">Username</label>
+                        <label className="login-label-hidden" for="id-login-username">Ім'я користувача</label>
                         <input className="login-form-input"
                             name="username"
                             autoComplete="name"
                             spellCheck="true"
-                            placeholder="Username"
+                            placeholder="Ім'я користувача"
                             id="id-login-username"
                             value={user.username}
                             onChange={this.handleChange}
                             autoFocus
                             required />
-                        <label className="login-label-hidden" for="id-login-password">Password</label>
+                        <label className="login-label-hidden" for="id-login-password">Пароль</label>
                         <input className="login-form-input"
                             name="password"
                             type="password"
                             autoComplete="password"
                             spellCheck="true"
-                            placeholder="Password"
+                            placeholder="Пароль"
                             id="id-login-password"
                             value={user.password}
                             onChange={this.handleChange}
                             autoFocus
                             required />
 
-                        <button className="login-form-button">Register</button>
+                        <button className="login-form-button">Зареєструватись</button>
                     </form>
                 </div>
             </div>

@@ -13,8 +13,7 @@ const Logo = () => {
 const Navlinks = () => {
   return (
     <ul className="navbar-links">
-      <li className="navbar-item"><a className="link navbar-link active" href="/courses">Courses</a></li>
-      <li className="navbar-item"><a className="link navbar-link active" href="/teach">Teach</a></li>
+      <li className="navbar-item"><a className="link navbar-link active" href="/courses">Курси</a></li>
     </ul>
   )
 }
@@ -34,8 +33,8 @@ const Divider = () => {
 const Authlinks = () => {
   return (
     <div className="auth-links">
-      <a href="?auth=login" className="navbar-auth link">Log in</a>
-      <a href="?auth=register" className="navbar-auth link">Register</a>
+      <a href="?auth=login" className="navbar-auth link">Увійти</a>
+      <a href="?auth=register" className="navbar-auth link">Реєстрація</a>
     </div>
   )
 }
@@ -46,10 +45,11 @@ const Navbar = () => {
     <nav className="navbar">
       <Logo />
       <Navlinks />
-      <Spacer />
-      <Divider />
-      {user == null && <Authlinks />}
-      {user && <UserProfileHeader user={user} />}
+      <div className="right">
+        <Divider />
+        {user == null && <Authlinks />}
+        {user && <UserProfileHeader user={user} />}
+      </div>
     </nav>
   )
 }
